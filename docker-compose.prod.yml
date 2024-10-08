@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  fastapi:
+    image: fastapi-docker:latest
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV_VAR=value  # Add your environment variables here
+    networks:
+      - app-network
+
+  caddy:
+    image: caddy:latest
+    ports:
+      - "80:80"       # HTTP
+      - "443:443"     # HTTPS
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile  # Make sure to mount your Caddyfile
+      - caddy_data:/data                  # Caddy data persistence
+      - caddy_config:/config              # Caddy config persistence
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  caddy_data:
+  caddy_config:

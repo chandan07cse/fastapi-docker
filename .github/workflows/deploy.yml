@@ -1,9 +1,9 @@
-name: Auto Deploy FastAPI with Docker Compose to EC2
+name: Auto Deploy FastAPI with Docker Compose and Caddy to EC2
 
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
@@ -18,21 +18,23 @@ jobs:
     - name: Deploy with Docker Compose
       uses: appleboy/ssh-action@v0.1.6
       with:
-        host: ${{ secrets.EC2_HOST }}
-        username: ubuntu
-        key: ${{ secrets.EC2_SSH_KEY }}
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{secrets.SSH_USERNAME}}
+        key: ${{ secrets.SSH_KEY }}
         script: |
           # Navigate to the project directory
-          cd /path/to/your/project
-          
-          # Pull the latest changes from GitHub (if not using image build)
-          git pull
-          
+          cd /codes/fastapi-docker
+
+          # Pull the latest changes from GitHub
+          git pull origin master
+
           # Stop existing containers and clean up
-          docker-compose down
+          #sudo docker-compose down
 
           # Pull new image (if using external registry)
-          docker-compose pull
+          #docker-compose pull
           
           # Rebuild and start the containers
-          docker-compose up -d --build
+          #docker-compose up -d --build
+
+          sudo docker-compose -f docker-compose.prod.yml up -d --build --remove-orphans

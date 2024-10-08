@@ -1,0 +1,3 @@
+fastapi.gstadmission.ac.bd {              # Replace with your domain or IP address
+    reverse_proxy fastapi:8000  # Proxy traffic to the FastAPI service running on port 8000
+}
