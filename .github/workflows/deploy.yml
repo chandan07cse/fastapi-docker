@@ -23,7 +23,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         script: |
           # Navigate to the project directory
-          cd /codes/fastapi-docker
+          cd ~/codes/fastapi-docker
 
           # Pull the latest changes from GitHub
           git pull origin master
