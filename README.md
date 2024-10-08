@@ -1,4 +1,5 @@
-# Local Installation :
+ # [Dockerized Fast API](https://github.com/chandan07cse/fastapi-docker) - Demo Application
+ ### :feet: Local Installation
 First install docker locally
 
 https://docs.docker.com/engine/install/ubuntu/
@@ -18,6 +19,6 @@ If you would like to ssh into images
 ```
 sudo docker exec -it image-id sh
 ```
-# Deployment :
+ ### :feet: Deployment
 Push your code to github and it'll be automatically deployed to the server. 
 Currently its configured for master branch only
