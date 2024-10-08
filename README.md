@@ -141,7 +141,7 @@ Over time, your Docker environment may accumulate unused images that take up dis
   ```bash
   sudo docker image prune
   ```
-### 4. **Remove Unused Containers**
+### 5. **Remove Unused Containers**
 
 Over time, your Docker environment may accumulate unused containers that take up disk space. You can clean up these containers using the following command:
 
