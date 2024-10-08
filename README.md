@@ -1,4 +1,4 @@
-# 🚀 [Dockerized FastAPI](https://github.com/chandan07cse/fastapi-docker) - The Boilerplare
+# 🚀 [Dockerized FastAPI](https://github.com/chandan07cse/fastapi-docker) - The Boilerplate
 
 This repository contains a FastAPI application that is fully Dockerized for local development and automatic deployment using **Docker Compose** and **GitHub Actions**.
 
