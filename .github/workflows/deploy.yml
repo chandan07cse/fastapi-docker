@@ -38,3 +38,4 @@ jobs:
           #docker-compose up -d --build
 
           sudo docker-compose -f docker-compose.prod.yml up -d --build --remove-orphans
+          sudo systemctl restart caddy
