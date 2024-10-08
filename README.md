@@ -4,7 +4,7 @@ First install docker locally
 
 https://docs.docker.com/engine/install/ubuntu/
 
-Then cd into your project and run
+Clone this repo and cd into your project and run
 ```
 sudo docker-compose -f docker-compose.dev.yml up -d --build --remove-orphans
 ```
