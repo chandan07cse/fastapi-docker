@@ -148,20 +148,6 @@ Over time, your Docker environment may accumulate unused containers that take up
   ```bash
   sudo docker container prune
   ```
-## 📂 Project Structure
-
-Here’s an overview of the project structure, which outlines the main components of the application:
-
-```plaintext
-fastapi-docker/
-├── app/                     # FastAPI application files
-│   ├── __init__.py          # Package initialization
-│   └── main.py              # Main FastAPI application entry point
-├── docker-compose.dev.yml    # Docker Compose file for local development
-├── docker-compose.yml        # Docker Compose file for production
-├── Caddyfile                 # Caddy configuration file for reverse proxy and HTTPS
-└── README.md                 # Project documentation (this file)
-```
 
 ## 🌟 Contributing
 
