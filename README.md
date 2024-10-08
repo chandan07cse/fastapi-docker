@@ -134,14 +134,14 @@ If you need to access a running container for debugging or other purposes, use t
   ```bash
   sudo docker exec -it <container-id> sh
   ```
-### 4. **Remove Unused Images**
+### 3. **Remove Unused Images**
 
 Over time, your Docker environment may accumulate unused images that take up disk space. You can clean up these images using the following command:
 
   ```bash
   sudo docker image prune
   ```
-### 5. **Remove Unused Containers**
+### 4. **Remove Unused Containers**
 
 Over time, your Docker environment may accumulate unused containers that take up disk space. You can clean up these containers using the following command:
 
