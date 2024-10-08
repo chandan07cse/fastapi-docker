@@ -8,9 +8,7 @@ This repository contains a FastAPI application that is fully Dockerized for loca
 3. [Local Installation](#-local-installation)
 4. [Deployment](#-deployment)
 5. [Available Commands](#-available-commands)
-6. [Project Structure](#-project-structure)
-7. [Contributing](#-contributing)
-8. [License](#-license)
+6. [Contributing](#-contributing)
 
 ---
 
