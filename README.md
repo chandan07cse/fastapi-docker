@@ -114,7 +114,7 @@ Caddy will automatically handle reverse proxying and TLS certificate management.
 - Monitor the GitHub Actions logs for any errors during deployment. If there are issues, you can check the logs of your Docker containers for troubleshooting:
 
   ```bash
-  sudo docker-compose -f docker-compose.yml logs
+  sudo docker-compose -f docker-compose.prod.yml logs
   ```
 ## 🔧 Available Commands
 
