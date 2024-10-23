@@ -5,4 +5,4 @@ app = FastAPI()
 @app.get('/')
 
 def index():
-    return {"message":"Hello Dockerized FastAPI with Caddy"}
+    return {"message":"Hello Dockerized FastAPI"}
